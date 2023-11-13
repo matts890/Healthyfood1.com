@@ -7,7 +7,7 @@ import SecondPage from './SecondPage';
 
 import SearchBar from './SearchBar';
 import Footer from "./Footer";
-import Login from "./Login"
+
 
 import './App.css';
 
@@ -15,7 +15,6 @@ import './App.css';
 
 
 function App() {
-  const [searchResults, setSearchResults] = useState([]);
 
   const handleSearch = (searchTerm) => {
     // Perform your search logic here, for example, fetch data from an API
@@ -42,7 +41,6 @@ function App() {
       <SearchBar onSearch={handleSearch} />
       {/* Display search results */}
       <Footer/>
-      <Login />
       {currentPage === 'home' && <HomePage goToSecondPage={goToSecondPage} />}
       {currentPage === 'second' && <SecondPage goBack={goBack} />}
 
