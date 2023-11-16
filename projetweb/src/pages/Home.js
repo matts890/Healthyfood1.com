@@ -14,6 +14,9 @@ export default function Home(){
 
           
           <body className='body_s'>
+          <h1 className='Text'>
+          Fresh Choices, Vibrant Living.
+          </h1>
           <SearchBar onSearch={handleSearch} />
           {/* Display search results */}
           </body>

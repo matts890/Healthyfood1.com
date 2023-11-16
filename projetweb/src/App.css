@@ -1,23 +1,34 @@
 .body_s{
-  background-image: url("../src/Images/Back.png");
+  background-image: url("../src/Images/Back1.jpg");
   background-size: cover; /* This property ensures the image covers the whole background */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   height: 100vh; /* Make sure the body covers the whole viewport height */
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
+  position:relative;
   
 }
-
+.Text{
+  position:absolute;
+  top:25%;
+  left:10%;
+  color:#fff;
+  font-size: 80px;
+  width:450px;
+  font-family: 'Dancing Script', cursive;
+}
 
 
 .search {
   display: grid;
-  place-items: center;
-  height: 100vh;
+  /*place-items: center;
+  height: 100vh;*/
   margin: 0;
   align-items: center;
-  
+  position:absolute; /*moumkin ghalat*/
+  top:60%;
+  left:10%;
 
   
 
