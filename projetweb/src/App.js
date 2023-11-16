@@ -1,51 +1,44 @@
 
-import React, { useState } from 'react';
+
 import Navbar from './Navbar';
 
-import HomePage from './HomePage';
-import SecondPage from './SecondPage';
 
-import SearchBar from './SearchBar';
 import Footer from "./Footer";
 
 
 import './App.css';
-//text
+import {Route, Routes } from 'react-router-dom';
+import About from './pages/About';
+import Menu from './pages/Menu';
+import Home from './pages/Home';
+import ContactUsPage from './pages/ContactUsPage';
+import Testomonial from './pages/Testomonial';
+
 
 
 
 
 function App() {
 
-  const handleSearch = (searchTerm) => {
-    // Perform your search logic here, for example, fetch data from an API
-    // Update searchResults state with the search results
-    // setSearchResults(searchResultsData);
-    console.log(`Searching for: ${searchTerm}`);
-  };
-  //Starts with Homepage
-  const [currentPage, setCurrentPage] = useState('home');
-
-  const goToSecondPage = () => {
-    setCurrentPage('second');
-  };
-
-  const goBack = () => {
-    setCurrentPage('home');
-  };
+ 
   return (
     <div>
- 
+
+
       <Navbar/>
+      <Routes>
+        <Route path="/about" element={<About/>} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/menu" element={<Menu/>} />
+        <Route path="/contact" element={<ContactUsPage/>} />
+        <Route path="/testomonial" element={<Testomonial/>} />
+      </Routes>
       
-      
-      <SearchBar onSearch={handleSearch} />
-      {/* Display search results */}
+  
       <Footer/>
-      {currentPage === 'home' && <HomePage goToSecondPage={goToSecondPage} />}
-      {currentPage === 'second' && <SecondPage goBack={goBack} />}
-
-
+      
+      
+  
     </div>
   );
 }

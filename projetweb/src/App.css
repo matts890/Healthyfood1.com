@@ -1,4 +1,4 @@
-body{
+.body_s{
   background-image: url("../src/Images/Back.png");
   background-size: cover; /* This property ensures the image covers the whole background */
   background-position: center; /* Center the image */
@@ -8,31 +8,9 @@ body{
   padding: 0; /* Remove default body padding */
   
 }
-.navbar {
-  background-color: gray;
-  color: white;
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-}
 
-.nav-links {
-  list-style-type: none;
-  display: flex;
-}
 
-.nav-links li {
-  margin: 0 15px;
-}
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-}
-
-.nav-links a:hover {
-  color:blue;
-}
 .search {
   display: grid;
   place-items: center;
