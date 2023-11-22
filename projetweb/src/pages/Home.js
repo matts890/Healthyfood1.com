@@ -1,5 +1,5 @@
 import SearchBar from "../SearchBar";
-
+import Cards from '../Components/Cards';
 
 export default function Home(){
     const handleSearch = (searchTerm) => {
@@ -20,6 +20,9 @@ export default function Home(){
           <SearchBar onSearch={handleSearch} />
           {/* Display search results */}
           </body>
+          <div>
+          <Cards/>
+          </div>
 
           
           

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 import {NavLink,Link} from "react-router-dom"
+import {ShoppingCart} from "phosphor-react"
 import "./Navbar.css"
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <Link to="/home" className='title'>Healthivery</Link>
+      <Link to="/" className='title'>Healthivery</Link>
       <div className='menu' onClick={() =>{
         setMenuOpen(!menuOpen);
       }}>
@@ -18,7 +19,7 @@ export default function Navbar() {
       </div>
       <ul className={menuOpen ? "open" : ""}>
           <li>
-            <NavLink to = "/home">Home</NavLink>
+            <NavLink to = "/">Home</NavLink>
           </li>
           <li>
           <NavLink to="/menu">Menu</NavLink>
@@ -34,6 +35,9 @@ export default function Navbar() {
           </li>
           <li>
           <NavLink to="/login">login</NavLink>
+          </li>
+          <li>
+          <NavLink to="/cart"><ShoppingCart size={30}/></NavLink> 
           </li>
       </ul>
     </nav>
