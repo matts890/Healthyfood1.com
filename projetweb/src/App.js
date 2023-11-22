@@ -13,6 +13,9 @@ import Menu from './pages/Menu';
 import Home from './pages/Home';
 import ContactUsPage from './pages/ContactUsPage';
 import Testomonial from './pages/Testomonial';
+import Login from './Login';
+import Signup from './Signup';
+
 
 
 
@@ -32,6 +35,9 @@ function App() {
         <Route path="/menu" element={<Menu/>} />
         <Route path="/contact" element={<ContactUsPage/>} />
         <Route path="/testomonial" element={<Testomonial/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/Signup" element={<Signup/>} />
+
       </Routes>
       
   
@@ -40,6 +46,7 @@ function App() {
       
   
     </div>
+    
   );
 }
 

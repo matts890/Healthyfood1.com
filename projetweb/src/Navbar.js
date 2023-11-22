@@ -27,10 +27,13 @@ export default function Navbar() {
             <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink to="/testomonial">Testomonial</NavLink>
+            <NavLink to="/contact">Contact us</NavLink>
           </li>    
           <li>
-          <NavLink to="/contact">Contact us</NavLink>
+          <NavLink to="/signup">Signup</NavLink>
+          </li>
+          <li>
+          <NavLink to="/login">login</NavLink>
           </li>
       </ul>
     </nav>
