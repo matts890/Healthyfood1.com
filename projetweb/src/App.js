@@ -6,6 +6,9 @@ import Navbar from './Navbar';
 import Footer from "./Footer";
 
 
+
+
+
 import './App.css';
 import {Route, Routes } from 'react-router-dom';
 import About from './pages/About';
@@ -19,7 +22,7 @@ import Cart from './pages/Cart';
 
 
 
-
+ 
 
 
 function App() {
